@@ -49,6 +49,35 @@ class Tree {
 }
 ```
 
+```js
+
+// 자바스크립트 돔을 이용한 컴퓨터 디렉토리구조를 구현한 코드이다. 
+// 토글버튼을 만드는 
+function createTreeView(menu, currentNode) {
+  // TODO: createTreeView 함수를 작성하세요.
+ 
+
+  for (let i = 0; i < menu.length; i++) {
+    const li = document.createElement("li")
+    
+    if(menu[i].children) {
+      const input = document.createElement("input")
+      const span = document.createElement("span")
+      const ul = document.createElement("ul")
+      span.textContent = menu[i].name
+      input.setAttribute('type', 'checkbox')
+      li.append(input, span, ul)
+      currentNode.append(li)
+      // 재귀적으로 만들어가는 코드
+      createTreeView(menu[i].children, ul)
+    } else {
+      li.textContent = menu[i].name
+      currentNode.append(li)
+    }
+  }
+
+}
+```
 
 ## Binary Search Tree(이진 탐색 트리)
 
