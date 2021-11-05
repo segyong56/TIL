@@ -17,9 +17,12 @@
 - 프로토타입 prototype
 - 함수의 prototype 프로퍼티
 - 클래스와 기본 문법
+- 동기와 비동기
+- 이벤트 
 - 콜백/프로미스
 - settimeout/setinterval
 - proxy/reflect
+- 싱글스레드 
 
 **part2**
 - 주요 노드 프로퍼티
