@@ -22,7 +22,13 @@
 - 콜백/프로미스
 - settimeout/setinterval
 - proxy/reflect
-- 싱글스레드 
+- 싱글스레드
+- hoisting
+- call, apply, bind
+- deep 과 shallow object copy
+- Prototype
+- OOP의 4가지 특징과 javascript를 활용
+- 함수유형
 
 **part2**
 - 주요 노드 프로퍼티
@@ -78,5 +84,11 @@
 ### 기본 프론트앤트 개발 지식
 - flux와 mvc 패턴
 - cookie, sessionStorage and localStorage
-
-
+- AJAX 기술
+- 비대칭키를 사용한 암호화
+- Unicode와 UTF-8
+- CSRF
+- XSS
+- JSONP
+- 모듈화
+- unit test and a functional/integration test
