@@ -1,5 +1,10 @@
 ## JS, CSS, HTML 관련
 클로저의 개념과 사용하는 이유 ★★★★★ <br />
+ <Details>
+  <summary>답변</summary>
+ 클로저란 ?
+ </Details>
+ 
 호이스팅의 개념 ★★★★★ <br />
 Array 함수 (reduce, foreach, every...) ★★★★ <br />
 Event Delegation과 막는방법 ★★★★ <br />
