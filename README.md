@@ -93,3 +93,9 @@
 - 모듈화
 - unit test and a functional/integration test
 - CI/CD
+
+### node.js
+### typescript.js
+### MongoDB
+### MySQL
+### Error Handling
