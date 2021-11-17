@@ -28,9 +28,9 @@ app.get("/", (req, res) => {
 // herren과제를 하며 herren에서 주신 api를 클라이언트에 바로 사용했을 때 cors에러가 나었다. 근데, cors에러를 직접 해결할 능력이 있는지 보기위해 내주신거 같았다...;; request를 이용하여 응답받은 body
 데이터를 client로 다시 보내줌으로써 cors를 해결할 수 있다.
 
-app.get("/campains", (req, res) => {
+app.get("/campaigns", (req, res) => {
   const url =
-    "https://herren-common.s3.ap-northeast-2.amazonaws.com/frontend/campaignInfo.json";
+    process.env.HERREN_CAMPAIGNS;
 
   request(
     {
@@ -44,7 +44,7 @@ app.get("/campains", (req, res) => {
 });
 
 app.get("/status", (req, res) => {
-  const url = ""
+  const url = process.env.HERREN_STATEMENT
 
   request({
     url: url,
