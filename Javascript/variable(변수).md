@@ -87,5 +87,5 @@ console.log(text.charAt(0));
 자바스크립트의 특성상 선언된 함수, var키워드는 선언된 시점을 무시하고 어디서 호출하여도 선언된 함수를 먼저 읽고, 코드를 실행이 되기 때문에 보통 코드를 위에서 아래로 읽어나가면서 실행되는 자바스크립트에서 혼돈의 카오스를 맞이 하게 된다.
 
 
-<img width="1072" alt="스크린샷 2021-11-19 오후 4 44 51" src="https://user-images.githubusercontent.com/80687195/142585054-2ff010a1-9cf0-4f73-81b4-aabc5ea8a40f.png">
+<img width="742" alt="스크린샷 2021-11-19 오후 4 44 51" src="https://user-images.githubusercontent.com/80687195/142585054-2ff010a1-9cf0-4f73-81b4-aabc5ea8a40f.png">
 
