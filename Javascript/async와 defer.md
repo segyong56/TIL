@@ -11,10 +11,11 @@
 
 <img width="867" alt="스크린샷 2021-11-19 오후 1 52 32" src="https://user-images.githubusercontent.com/80687195/142575941-ed94f384-ba37-4326-9292-48e8345e03ca.png">
 
+
 html태그를 읽어가며 script태그를 만나게 되면 fetching js, executing js
 자바스크립트파일을 읽고, 실행합니다. 이러는 과정에서 parsing html하는 과정이 blocked현상이 일어나게 됩니다. 
 잠시 멈추는 것을 말합니다. html은 화면에 나타는 요소들이기 때문에 자바스크립트를 읽고나서 실행하고 난 후 화면에 보여지는 현상이기 때문에 화면에 페이지가 나타나는 것이 느려지는 문제가 있습니다.
-  
+ 
 ### 2. body태그 안에 script태그를 포함한 경우
 
 html태그를 모두 parsing 끝난 후 자바스크립트코드를 읽고 실행합니다. 
@@ -26,8 +27,9 @@ html태그를 모두 parsing 끝난 후 자바스크립트코드를 읽고 실�
 <img width="867" alt="스크린샷 2021-11-19 오후 1 54 51" src="https://user-images.githubusercontent.com/80687195/142576735-7cfafc1c-b013-4fa6-b877-22c8df2b83e8.png">
 
 
-이렇게 async를 설정해 주면 default값은 true이며, blocked현상을 없앨 수 있다. 잠시 멈추고 script를 읽고 실행했던 부분을 html parsing을 멈추지않고 parsing을 하면서 script코드가 실행하게 할 수 있습니다.
-하지만 이 또한 문제가 생길 수 있습니다. 자바스크립트에서 queryselector과 같은 속성을 사용하여 코드를 작성했다면  html이 다 읽기 전에 실행이 되는 부분이 있을 수 있습니다.
+ 이렇게 async를 설정해 주면 default값은 true이며, blocked현상을 없앨 수 있다. 잠시 멈추고 script를 읽고 실행했던 부분을 html parsing을 멈추지않고 parsing을 하면서 script코드가 실행하게 할 수 있습.니다.
+ 하지만 이 또한 문제가 생길 수 있습니다. 자바스크립트에서 queryselector과 같은 속성을 사용하여 코드를 작성했다면  html이 다 읽기 전에 실행이 되는 부분이 있을 수 있습니다.
+
 
 ### 4. head태그 안에 script태그를 포함한 후 defer를 설정해 준 경우
 
