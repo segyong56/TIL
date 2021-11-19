@@ -15,6 +15,7 @@ r(root)em이라는 뜻으로 root값에 따라 상대적으로 폰트사이즈�
 즉, 브라우저의 root값(body)의 font-size가 16px이기때문에, 2em은 32px가 된다.
 
 하지만,
+
 <img width="882" alt="스크린샷 2021-11-19 오전 11 34 14" src="https://user-images.githubusercontent.com/80687195/142559216-a9b293e7-162c-4bcd-854e-a7ccbec50f93.png">
 
  ```html
