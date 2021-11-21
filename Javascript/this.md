@@ -137,7 +137,7 @@ foo.call(ken); // 36;
 bind (opens new window)함수는 `this` 키워드를 주어진 변수로 설정하고, 앞쪽의 매개변수도 자신의 인자를 사용해 미리 순서대로 채워놓은 새로운 함수를 반환합니다.
 
 
-### 👆 생성자 함수 new
+## 👆 생성자 함수 new
 
 `new`와 같이 쓰는 `this`는 return문이 없어도 자동으로 return으로 할당된다.
 
