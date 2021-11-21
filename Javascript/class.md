@@ -16,47 +16,94 @@ new function을 사용할 수 있습니다.
 
 ### 💎 클래스
 
-1. new 키워드의 사용법
+클래스라는 기능은 C++, Java, C#, PHP 등의 다른 프로그래밍 언어에는 있는 기능인데 자바스크립트에는 없었기 때문에 예전 자바스크립트 (ES5) 에서는 클래스 문법이 따로 없었기 때문에 위에서 작성한 코드처럼 객체 생성자 함수를 사용하여 비슷한 작업을 구현해왔습니다.
 
-2. class 키워드의 사용법
-### 인스턴스
-
+ES6 에서부터는 class 라는 문법이 추가되었는데요, 우리가 객체 생성자로 구현했던 코드를 조금 더 명확하고, 깔끔하게 구현 할 수 있게 해줍니다. 추가적으로, 상속도 훨씬 쉽게 해줄 수 있습니다.
 
 
-### 객체 지향 프로그래밍 특징
-캡슐화
+```js
 
-상속
+ class Animal {
+ 
+  constructor(type, name, sound) {
+  
+    this.type = type;
+    this.name = name;
+    this.sound = sound;
+  
+  }
+  
+  say() {
+  
+    console.log(this.sound)
+    
+  }
+}
 
-추상화 
+const dog = new Animal('개', '멍멍이', '멍멍)
+const cat = new Animal('고양이', '야옹이', '야옹')
 
-다형성
+dog.say();
+cat.say();
 
-### Prototype
+```
 
+여기서 우리가 say 라는 함수를 클래스 내부에 선언하였는데요, `클래스 내부의 함수를 '메서드'`라고 부릅니다. 이렇게 메서드를 만들면 자동으로 prototype 으로 등록이 됩니다.
 
+class 를 사용했을때에는, 다른 클래스를 쉽게 상속 할 수 있습니다.
 
-### 객체 지향 프로그래밍의 상속
+```js
 
+// animal class
+class Animal {
 
+  constructor(type, name, sound) {
+    this.type = type;
+    this.name = name;
+    this.sound = sound;
+    
+   }
 
-### __proto__ 
-
-
-## 기본문법
-
-
-이렇게 클래스를 만들고, new MyClass()를 호출하면 내부에서 정의한 메서드가 들어 있는 객체가 생성된다.
-
-new Class()를 호출하면, 새로운 객체가 생성된 후, 넘겨받은 인수와 함께 constructor가 자동으로 실행된다. 
-그리고 method1 객체 메서드를 호출할 수 있다.
-
-자바스크립트에서 클래스는 함수의 한 종류이다.
-
-
-
-
-
+  say() {
+    console.log(this.sound)
+  }
+}
 
 
-https://velog.io/@o_oxxv/JavaScript-class-%ED%82%A4%EC%9B%8C%EB%93%9C
+class Dog extends Animal {
+
+  constructor(name, sound) {
+    super('개', name, sound);
+   }
+}
+
+class Cat extends Animal {
+
+  constructor(name, sound) {
+    super('고양이', name, sound) 
+  }
+}
+
+const dog = new Dog('멍멍이', '멍멍')
+const cat = new Cat('야옹이', '야옹')
+
+dog.say();
+cat.say();
+
+```
+
+결과물
+```js
+
+멍멍
+야옹
+
+```
+
+상속을 할 때는 `extends` 키워드를 사용하며, constructor에서 사용하는 `super()` 함수가 상속받은 클래스의 생성자를 가르킵니다.
+
+
+
+
+[참고문헌] : https://velog.io/@o_oxxv/JavaScript-class-%ED%82%A4%EC%9B%8C%EB%93%9C
+[참고문헌] : https://learnjs.vlpt.us/basics/10-prototype-class.html
