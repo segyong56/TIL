@@ -132,7 +132,7 @@ foo.call(ken); // 36;
 
 ```
 
-3-3. function.prototype.bind()
+### 3-3. function.prototype.bind()
 
 bind (opens new window)함수는 `this` 키워드를 주어진 변수로 설정하고, 앞쪽의 매개변수도 자신의 인자를 사용해 미리 순서대로 채워놓은 새로운 함수를 반환합니다.
 
