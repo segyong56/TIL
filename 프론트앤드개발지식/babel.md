@@ -1,4 +1,13 @@
 
+- 바벨 설치
+```
+
+npm install --save-dev @babel/core babel-loader @babel/preset-react @babel/preset-env 
+
+```
+
+
+- 바벨 
 ```
 @babel/core
 리액트는 es6를 사용하므로 여러 브라우저에서 사용가능하도록 es5문법으로 바꿔줌
